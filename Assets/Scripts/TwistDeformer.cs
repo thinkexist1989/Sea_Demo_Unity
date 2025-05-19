@@ -34,7 +34,7 @@ public class TwistDeformer : MonoBehaviour
                 maxDistance = distance;
             }
             
-            Debug.Log("最远距离: " + maxDistance);
+            // Debug.Log("最远距离: " + maxDistance);
 
         }
         

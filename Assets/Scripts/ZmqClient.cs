@@ -18,7 +18,7 @@ public class ZmqClient : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCommunication();
     }
 
     // Update is called once per frame
@@ -38,8 +38,8 @@ public class ZmqClient : MonoBehaviour
                 AsyncIO.ForceDotNet.Force();
                 using (var subSocket = new SubscriberSocket())
                 {
-                    subSocket.Connect("tcp://localhost:6060");
-                    subSocket.Subscribe("status");
+                    subSocket.Connect("tcp://192.168.1.94:6060");
+                    subSocket.Subscribe("");
 
                     while (isRunning)
                     {
@@ -70,6 +70,23 @@ public class ZmqClient : MonoBehaviour
                 }
             }
         );
+        
+        zmqThread.Start();
+        
+        
+    }
+
+    private void OnDestroy()
+    {
+        isRunning = false;
+        if (zmqThread != null && zmqThread.IsAlive)
+        {
+            zmqThread.Join();
+            zmqThread = null;
+        }
+        
+        NetMQConfig.Cleanup();
+        
         
     }
 }
