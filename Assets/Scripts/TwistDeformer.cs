@@ -12,7 +12,8 @@ public class TwistDeformer : MonoBehaviour
     private Vector3[] originalVertices, twistedVertices;
 
     public float maxAngle = 10f;
-    
+
+    public Color minColor = Color.blue;
     public Color maxColor = Color.red;
 
     private float maxDistance = 0.0f;
@@ -65,8 +66,18 @@ public class TwistDeformer : MonoBehaviour
         mesh.vertices = twistedVertices;
         mesh.RecalculateNormals();
         mesh.RecalculateBounds();
-        
-        Color color = Color.Lerp(Color.gray, maxColor, Mathf.Abs(value) / maxAngle);
+
+
+        Color color;
+        if (value < 0)
+        {
+            color = Color.Lerp(Color.gray, minColor, Mathf.Abs(value) / maxAngle);
+
+        }
+        else
+        {
+            color = Color.Lerp(Color.gray, maxColor, Mathf.Abs(value) / maxAngle);
+        }
         material.SetColor("_Color", color);
     }
 }
