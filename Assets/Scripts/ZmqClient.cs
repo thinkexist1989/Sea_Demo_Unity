@@ -31,36 +31,58 @@ public class ZmqClient : MonoBehaviour
     public void StartCommunication()
     {
         
-        Debug.Log("开启反馈线程");
+        Debug.Log("Start client");
         isRunning = true;
         
         zmqThread = new Thread(() => {
                 AsyncIO.ForceDotNet.Force();
-                using (var subSocket = new SubscriberSocket())
+                using (var socket = new RequestSocket())
                 {
-                    subSocket.Connect("tcp://192.168.1.94:6060");
-                    subSocket.Subscribe("");
+                    socket.Connect("tcp://localhost:6060");
 
                     while (isRunning)
                     {
                         try
                         {
-                            byte[] msg = subSocket.ReceiveFrameBytes();
-                            var feedback = ControlFeedback.Parser.ParseFrom(msg);
-                            switch (feedback.FeedbackCase)
+
+                            var command = new ControlCommand
                             {
-                                case ControlFeedback.FeedbackOneofCase.Status:
-                                    var status = feedback.Status;
-                                    Debug.Log(status.ToString());
-                                    break;
-                                case ControlFeedback.FeedbackOneofCase.Config:
-                                    var config = feedback.Config;
-                                    Debug.Log(config.ToString());
-                                    break;
-                                case ControlFeedback.FeedbackOneofCase.None:
-                                    Debug.LogWarning("Feedback类型错误！");
-                                    break;
+                                SetWorkMode = new SetWorkModeCommand()
+                                {
+                                    WorkMode = WorkMode.Impedance
+                                }
+                            };
+
+                            byte[] data = command.ToByteArray();
+                            socket.SendFrame(data);
+                            
+                            
+                            byte[] msg;
+                            if (socket.TryReceiveFrameBytes(TimeSpan.FromMilliseconds(100), out msg))
+                            {
+                                var feedback = ControlFeedback.Parser.ParseFrom(msg);
+                                switch (feedback.FeedbackCase)
+                                {
+                                    case ControlFeedback.FeedbackOneofCase.Status:
+                                        var status = feedback.Status;
+                                        Debug.Log(status.ToString());
+                                        break;
+                                    case ControlFeedback.FeedbackOneofCase.Config:
+                                        var config = feedback.Config;
+                                        Debug.Log(config.ToString());
+                                        break;
+                                    case ControlFeedback.FeedbackOneofCase.None:
+                                        Debug.LogWarning("Feedback类型错误！");
+                                        break;
+                                }
                             }
+                            else
+                            {
+                                Debug.LogWarning("未收到返回数据帧");
+                            }
+                            
+                            
+
                         }
                         catch (Exception e)
                         {
