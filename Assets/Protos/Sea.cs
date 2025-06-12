@@ -32,38 +32,62 @@ namespace Sea {
             "Y2UYByABKAESEQoJc3RpZmZuZXNzGAggASgBEg8KB2RhbXBpbmcYCSABKAEi",
             "ZAoOQ29uZmlnRmVlZGJhY2sSGwoTZW5jb2RlcjFfcmVzb2x1dGlvbhgBIAEo",
             "BRIbChNlbmNvZGVyMl9yZXNvbHV0aW9uGAIgASgFEhgKEHNwcmluZ19zdGlm",
-            "Zm5lc3MYAyABKAUiawoPQ29udHJvbEZlZWRiYWNrEiUKBnN0YXR1cxgBIAEo",
-            "CzITLnNlYS5TdGF0dXNGZWVkYmFja0gAEiUKBmNvbmZpZxgCIAEoCzITLnNl",
-            "YS5Db25maWdGZWVkYmFja0gAQgoKCGZlZWRiYWNrIigKE1NldFN0aWZmbmVz",
-            "c0NvbW1hbmQSEQoJc3RpZmZuZXNzGAEgASgBIiQKEVNldERhbXBpbmdDb21t",
-            "YW5kEg8KB2RhbXBpbmcYASABKAEiNgoSU2V0V29ya01vZGVDb21tYW5kEiAK",
-            "CXdvcmtfbW9kZRgBIAEoDjINLnNlYS5Xb3JrTW9kZSIfCg1FbmFibGVDb21t",
-            "YW5kEg4KBmVuYWJsZRgBIAEoCCImChJTZXRQb3NpdGlvbkNvbW1hbmQSEAoI",
-            "cG9zaXRpb24YASABKAEiJgoSU2V0VmVsb2NpdHlDb21tYW5kEhAKCHZlbG9j",
-            "aXR5GAEgASgBIrcCCg5Db250cm9sQ29tbWFuZBIxCg1zZXRfc3RpZmZuZXNz",
-            "GAEgASgLMhguc2VhLlNldFN0aWZmbmVzc0NvbW1hbmRIABItCgtzZXRfZGFt",
-            "cGluZxgCIAEoCzIWLnNlYS5TZXREYW1waW5nQ29tbWFuZEgAEjAKDXNldF93",
-            "b3JrX21vZGUYAyABKAsyFy5zZWEuU2V0V29ya01vZGVDb21tYW5kSAASJAoG",
-            "ZW5hYmxlGAQgASgLMhIuc2VhLkVuYWJsZUNvbW1hbmRIABIvCgxzZXRfcG9z",
-            "aXRpb24YBSABKAsyFy5zZWEuU2V0UG9zaXRpb25Db21tYW5kSAASLwoMc2V0",
-            "X3ZlbG9jaXR5GAYgASgLMhcuc2VhLlNldFZlbG9jaXR5Q29tbWFuZEgAQgkK",
-            "B2NvbW1hbmQqSgoIUnVuU3RhdGUSDAoIRElTQUJMRUQQABILCgdTVE9QUEVE",
-            "EAESCwoHUlVOTklORxACEgsKB1VOS05PV04QAxIJCgVFUlJPUhAEKkUKCFdv",
-            "cmtNb2RlEg0KCUlNUEVEQU5DRRAAEg4KClpFUk9fRk9SQ0UQARIMCghQT1NJ",
-            "VElPThACEgwKCFZFTE9DSVRZEANiBnByb3RvMw=="));
+            "Zm5lc3MYAyABKAEiiQMKD0NvbnRyb2xGZWVkYmFjaxIlCgZzdGF0dXMYASAB",
+            "KAsyEy5zZWEuU3RhdHVzRmVlZGJhY2tIABIlCgZjb25maWcYAiABKAsyEy5z",
+            "ZWEuQ29uZmlnRmVlZGJhY2tIABIyCg1zZXRfc3RpZmZuZXNzGAMgASgLMhku",
+            "c2VhLlNldFN0aWZmbmVzc0ZlZWRiYWNrSAASLgoLc2V0X2RhbXBpbmcYBCAB",
+            "KAsyFy5zZWEuU2V0RGFtcGluZ0ZlZWRiYWNrSAASMQoNc2V0X3dvcmtfbW9k",
+            "ZRgFIAEoCzIYLnNlYS5TZXRXb3JrTW9kZUZlZWRiYWNrSAASIQoEc3RvcBgG",
+            "IAEoCzIRLnNlYS5TdG9wRmVlZGJhY2tIABIwCgxzZXRfcG9zaXRpb24YByAB",
+            "KAsyGC5zZWEuU2V0UG9zaXRpb25GZWVkYmFja0gAEjAKDHNldF92ZWxvY2l0",
+            "eRgIIAEoCzIYLnNlYS5TZXRWZWxvY2l0eUZlZWRiYWNrSABCCgoIZmVlZGJh",
+            "Y2siKQoUU2V0U3RpZmZuZXNzRmVlZGJhY2sSEQoJc3RpZmZuZXNzGAEgASgB",
+            "IiUKElNldERhbXBpbmdGZWVkYmFjaxIPCgdkYW1waW5nGAEgASgBIjcKE1Nl",
+            "dFdvcmtNb2RlRmVlZGJhY2sSIAoJd29ya19tb2RlGAEgASgOMg0uc2VhLldv",
+            "cmtNb2RlIhwKDFN0b3BGZWVkYmFjaxIMCgRzdG9wGAEgASgIIkQKE1NldFBv",
+            "c2l0aW9uRmVlZGJhY2sSCwoDcG9zGAEgASgBEg8KB21heF92ZWwYAiABKAES",
+            "DwoHbWF4X2FjYxgDIAEoASIiChNTZXRWZWxvY2l0eUZlZWRiYWNrEgsKA3Zl",
+            "bBgBIAEoASISChBHZXRTdGF0dXNDb21tYW5kIhIKEEdldENvbmZpZ0NvbW1h",
+            "bmQiKAoTU2V0U3RpZmZuZXNzQ29tbWFuZBIRCglzdGlmZm5lc3MYASABKAEi",
+            "JAoRU2V0RGFtcGluZ0NvbW1hbmQSDwoHZGFtcGluZxgBIAEoASI2ChJTZXRX",
+            "b3JrTW9kZUNvbW1hbmQSIAoJd29ya19tb2RlGAEgASgOMg0uc2VhLldvcmtN",
+            "b2RlIg0KC1N0b3BDb21tYW5kIkMKElNldFBvc2l0aW9uQ29tbWFuZBILCgNw",
+            "b3MYASABKAESDwoHbWF4X3ZlbBgCIAEoARIPCgdtYXhfYWNjGAMgASgBIiEK",
+            "ElNldFZlbG9jaXR5Q29tbWFuZBILCgN2ZWwYASABKAEijQMKDkNvbnRyb2xD",
+            "b21tYW5kEjEKDXNldF9zdGlmZm5lc3MYASABKAsyGC5zZWEuU2V0U3RpZmZu",
+            "ZXNzQ29tbWFuZEgAEi0KC3NldF9kYW1waW5nGAIgASgLMhYuc2VhLlNldERh",
+            "bXBpbmdDb21tYW5kSAASMAoNc2V0X3dvcmtfbW9kZRgDIAEoCzIXLnNlYS5T",
+            "ZXRXb3JrTW9kZUNvbW1hbmRIABIgCgRzdG9wGAQgASgLMhAuc2VhLlN0b3BD",
+            "b21tYW5kSAASLwoMc2V0X3Bvc2l0aW9uGAUgASgLMhcuc2VhLlNldFBvc2l0",
+            "aW9uQ29tbWFuZEgAEi8KDHNldF92ZWxvY2l0eRgGIAEoCzIXLnNlYS5TZXRW",
+            "ZWxvY2l0eUNvbW1hbmRIABIrCgpnZXRfc3RhdHVzGAcgASgLMhUuc2VhLkdl",
+            "dFN0YXR1c0NvbW1hbmRIABIrCgpnZXRfY29uZmlnGAggASgLMhUuc2VhLkdl",
+            "dENvbmZpZ0NvbW1hbmRIAEIJCgdjb21tYW5kKmYKCFJ1blN0YXRlEgwKCERJ",
+            "U0FCTEVEEAASCwoHU1RPUFBFRBABEgsKB1JVTk5JTkcQAhILCgdVTktOT1dO",
+            "EAMSCQoFRVJST1IQBBIMCghTVEFSVElORxAFEgwKCFNUT1BQSU5HEAYqRQoI",
+            "V29ya01vZGUSDQoJSU1QRURBTkNFEAASDgoKWkVST19GT1JDRRABEgwKCFBP",
+            "U0lUSU9OEAISDAoIVkVMT0NJVFkQA2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Sea.RunState), typeof(global::Sea.WorkMode), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Sea.StatusFeedback), global::Sea.StatusFeedback.Parser, new[]{ "RunState", "WorkMode", "CurrentPosition", "CurrentVelocity", "Encoder1Feedback", "Encoder2Feedback", "ExternalForce", "Stiffness", "Damping" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Sea.ConfigFeedback), global::Sea.ConfigFeedback.Parser, new[]{ "Encoder1Resolution", "Encoder2Resolution", "SpringStiffness" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.ControlFeedback), global::Sea.ControlFeedback.Parser, new[]{ "Status", "Config" }, new[]{ "Feedback" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.ControlFeedback), global::Sea.ControlFeedback.Parser, new[]{ "Status", "Config", "SetStiffness", "SetDamping", "SetWorkMode", "Stop", "SetPosition", "SetVelocity" }, new[]{ "Feedback" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.SetStiffnessFeedback), global::Sea.SetStiffnessFeedback.Parser, new[]{ "Stiffness" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.SetDampingFeedback), global::Sea.SetDampingFeedback.Parser, new[]{ "Damping" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.SetWorkModeFeedback), global::Sea.SetWorkModeFeedback.Parser, new[]{ "WorkMode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.StopFeedback), global::Sea.StopFeedback.Parser, new[]{ "Stop" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.SetPositionFeedback), global::Sea.SetPositionFeedback.Parser, new[]{ "Pos", "MaxVel", "MaxAcc" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.SetVelocityFeedback), global::Sea.SetVelocityFeedback.Parser, new[]{ "Vel" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.GetStatusCommand), global::Sea.GetStatusCommand.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.GetConfigCommand), global::Sea.GetConfigCommand.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Sea.SetStiffnessCommand), global::Sea.SetStiffnessCommand.Parser, new[]{ "Stiffness" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Sea.SetDampingCommand), global::Sea.SetDampingCommand.Parser, new[]{ "Damping" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Sea.SetWorkModeCommand), global::Sea.SetWorkModeCommand.Parser, new[]{ "WorkMode" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.EnableCommand), global::Sea.EnableCommand.Parser, new[]{ "Enable" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.SetPositionCommand), global::Sea.SetPositionCommand.Parser, new[]{ "Position" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.SetVelocityCommand), global::Sea.SetVelocityCommand.Parser, new[]{ "Velocity" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.ControlCommand), global::Sea.ControlCommand.Parser, new[]{ "SetStiffness", "SetDamping", "SetWorkMode", "Enable", "SetPosition", "SetVelocity" }, new[]{ "Command" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.StopCommand), global::Sea.StopCommand.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.SetPositionCommand), global::Sea.SetPositionCommand.Parser, new[]{ "Pos", "MaxVel", "MaxAcc" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.SetVelocityCommand), global::Sea.SetVelocityCommand.Parser, new[]{ "Vel" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sea.ControlCommand), global::Sea.ControlCommand.Parser, new[]{ "SetStiffness", "SetDamping", "SetWorkMode", "Stop", "SetPosition", "SetVelocity", "GetStatus", "GetConfig" }, new[]{ "Command" }, null, null, null)
           }));
     }
     #endregion
@@ -76,6 +100,8 @@ namespace Sea {
     [pbr::OriginalName("RUNNING")] Running = 2,
     [pbr::OriginalName("UNKNOWN")] Unknown = 3,
     [pbr::OriginalName("ERROR")] Error = 4,
+    [pbr::OriginalName("STARTING")] Starting = 5,
+    [pbr::OriginalName("STOPPING")] Stopping = 6,
   }
 
   public enum WorkMode {
@@ -672,13 +698,13 @@ namespace Sea {
 
     /// <summary>Field number for the "spring_stiffness" field.</summary>
     public const int SpringStiffnessFieldNumber = 3;
-    private int springStiffness_;
+    private double springStiffness_;
     /// <summary>
     /// in N/m
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int SpringStiffness {
+    public double SpringStiffness {
       get { return springStiffness_; }
       set {
         springStiffness_ = value;
@@ -702,7 +728,7 @@ namespace Sea {
       }
       if (Encoder1Resolution != other.Encoder1Resolution) return false;
       if (Encoder2Resolution != other.Encoder2Resolution) return false;
-      if (SpringStiffness != other.SpringStiffness) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(SpringStiffness, other.SpringStiffness)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -712,7 +738,7 @@ namespace Sea {
       int hash = 1;
       if (Encoder1Resolution != 0) hash ^= Encoder1Resolution.GetHashCode();
       if (Encoder2Resolution != 0) hash ^= Encoder2Resolution.GetHashCode();
-      if (SpringStiffness != 0) hash ^= SpringStiffness.GetHashCode();
+      if (SpringStiffness != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(SpringStiffness);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -739,9 +765,9 @@ namespace Sea {
         output.WriteRawTag(16);
         output.WriteInt32(Encoder2Resolution);
       }
-      if (SpringStiffness != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(SpringStiffness);
+      if (SpringStiffness != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(SpringStiffness);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -761,9 +787,9 @@ namespace Sea {
         output.WriteRawTag(16);
         output.WriteInt32(Encoder2Resolution);
       }
-      if (SpringStiffness != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(SpringStiffness);
+      if (SpringStiffness != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(SpringStiffness);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -781,8 +807,8 @@ namespace Sea {
       if (Encoder2Resolution != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Encoder2Resolution);
       }
-      if (SpringStiffness != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SpringStiffness);
+      if (SpringStiffness != 0D) {
+        size += 1 + 8;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -802,7 +828,7 @@ namespace Sea {
       if (other.Encoder2Resolution != 0) {
         Encoder2Resolution = other.Encoder2Resolution;
       }
-      if (other.SpringStiffness != 0) {
+      if (other.SpringStiffness != 0D) {
         SpringStiffness = other.SpringStiffness;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -828,8 +854,8 @@ namespace Sea {
             Encoder2Resolution = input.ReadInt32();
             break;
           }
-          case 24: {
-            SpringStiffness = input.ReadInt32();
+          case 25: {
+            SpringStiffness = input.ReadDouble();
             break;
           }
         }
@@ -855,8 +881,8 @@ namespace Sea {
             Encoder2Resolution = input.ReadInt32();
             break;
           }
-          case 24: {
-            SpringStiffness = input.ReadInt32();
+          case 25: {
+            SpringStiffness = input.ReadDouble();
             break;
           }
         }
@@ -907,6 +933,24 @@ namespace Sea {
         case FeedbackOneofCase.Config:
           Config = other.Config.Clone();
           break;
+        case FeedbackOneofCase.SetStiffness:
+          SetStiffness = other.SetStiffness.Clone();
+          break;
+        case FeedbackOneofCase.SetDamping:
+          SetDamping = other.SetDamping.Clone();
+          break;
+        case FeedbackOneofCase.SetWorkMode:
+          SetWorkMode = other.SetWorkMode.Clone();
+          break;
+        case FeedbackOneofCase.Stop:
+          Stop = other.Stop.Clone();
+          break;
+        case FeedbackOneofCase.SetPosition:
+          SetPosition = other.SetPosition.Clone();
+          break;
+        case FeedbackOneofCase.SetVelocity:
+          SetVelocity = other.SetVelocity.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -942,12 +986,90 @@ namespace Sea {
       }
     }
 
+    /// <summary>Field number for the "set_stiffness" field.</summary>
+    public const int SetStiffnessFieldNumber = 3;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Sea.SetStiffnessFeedback SetStiffness {
+      get { return feedbackCase_ == FeedbackOneofCase.SetStiffness ? (global::Sea.SetStiffnessFeedback) feedback_ : null; }
+      set {
+        feedback_ = value;
+        feedbackCase_ = value == null ? FeedbackOneofCase.None : FeedbackOneofCase.SetStiffness;
+      }
+    }
+
+    /// <summary>Field number for the "set_damping" field.</summary>
+    public const int SetDampingFieldNumber = 4;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Sea.SetDampingFeedback SetDamping {
+      get { return feedbackCase_ == FeedbackOneofCase.SetDamping ? (global::Sea.SetDampingFeedback) feedback_ : null; }
+      set {
+        feedback_ = value;
+        feedbackCase_ = value == null ? FeedbackOneofCase.None : FeedbackOneofCase.SetDamping;
+      }
+    }
+
+    /// <summary>Field number for the "set_work_mode" field.</summary>
+    public const int SetWorkModeFieldNumber = 5;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Sea.SetWorkModeFeedback SetWorkMode {
+      get { return feedbackCase_ == FeedbackOneofCase.SetWorkMode ? (global::Sea.SetWorkModeFeedback) feedback_ : null; }
+      set {
+        feedback_ = value;
+        feedbackCase_ = value == null ? FeedbackOneofCase.None : FeedbackOneofCase.SetWorkMode;
+      }
+    }
+
+    /// <summary>Field number for the "stop" field.</summary>
+    public const int StopFieldNumber = 6;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Sea.StopFeedback Stop {
+      get { return feedbackCase_ == FeedbackOneofCase.Stop ? (global::Sea.StopFeedback) feedback_ : null; }
+      set {
+        feedback_ = value;
+        feedbackCase_ = value == null ? FeedbackOneofCase.None : FeedbackOneofCase.Stop;
+      }
+    }
+
+    /// <summary>Field number for the "set_position" field.</summary>
+    public const int SetPositionFieldNumber = 7;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Sea.SetPositionFeedback SetPosition {
+      get { return feedbackCase_ == FeedbackOneofCase.SetPosition ? (global::Sea.SetPositionFeedback) feedback_ : null; }
+      set {
+        feedback_ = value;
+        feedbackCase_ = value == null ? FeedbackOneofCase.None : FeedbackOneofCase.SetPosition;
+      }
+    }
+
+    /// <summary>Field number for the "set_velocity" field.</summary>
+    public const int SetVelocityFieldNumber = 8;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Sea.SetVelocityFeedback SetVelocity {
+      get { return feedbackCase_ == FeedbackOneofCase.SetVelocity ? (global::Sea.SetVelocityFeedback) feedback_ : null; }
+      set {
+        feedback_ = value;
+        feedbackCase_ = value == null ? FeedbackOneofCase.None : FeedbackOneofCase.SetVelocity;
+      }
+    }
+
     private object feedback_;
     /// <summary>Enum of possible cases for the "feedback" oneof.</summary>
     public enum FeedbackOneofCase {
       None = 0,
       Status = 1,
       Config = 2,
+      SetStiffness = 3,
+      SetDamping = 4,
+      SetWorkMode = 5,
+      Stop = 6,
+      SetPosition = 7,
+      SetVelocity = 8,
     }
     private FeedbackOneofCase feedbackCase_ = FeedbackOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -980,6 +1102,12 @@ namespace Sea {
       }
       if (!object.Equals(Status, other.Status)) return false;
       if (!object.Equals(Config, other.Config)) return false;
+      if (!object.Equals(SetStiffness, other.SetStiffness)) return false;
+      if (!object.Equals(SetDamping, other.SetDamping)) return false;
+      if (!object.Equals(SetWorkMode, other.SetWorkMode)) return false;
+      if (!object.Equals(Stop, other.Stop)) return false;
+      if (!object.Equals(SetPosition, other.SetPosition)) return false;
+      if (!object.Equals(SetVelocity, other.SetVelocity)) return false;
       if (FeedbackCase != other.FeedbackCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -990,6 +1118,12 @@ namespace Sea {
       int hash = 1;
       if (feedbackCase_ == FeedbackOneofCase.Status) hash ^= Status.GetHashCode();
       if (feedbackCase_ == FeedbackOneofCase.Config) hash ^= Config.GetHashCode();
+      if (feedbackCase_ == FeedbackOneofCase.SetStiffness) hash ^= SetStiffness.GetHashCode();
+      if (feedbackCase_ == FeedbackOneofCase.SetDamping) hash ^= SetDamping.GetHashCode();
+      if (feedbackCase_ == FeedbackOneofCase.SetWorkMode) hash ^= SetWorkMode.GetHashCode();
+      if (feedbackCase_ == FeedbackOneofCase.Stop) hash ^= Stop.GetHashCode();
+      if (feedbackCase_ == FeedbackOneofCase.SetPosition) hash ^= SetPosition.GetHashCode();
+      if (feedbackCase_ == FeedbackOneofCase.SetVelocity) hash ^= SetVelocity.GetHashCode();
       hash ^= (int) feedbackCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1017,6 +1151,30 @@ namespace Sea {
         output.WriteRawTag(18);
         output.WriteMessage(Config);
       }
+      if (feedbackCase_ == FeedbackOneofCase.SetStiffness) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SetStiffness);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetDamping) {
+        output.WriteRawTag(34);
+        output.WriteMessage(SetDamping);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetWorkMode) {
+        output.WriteRawTag(42);
+        output.WriteMessage(SetWorkMode);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.Stop) {
+        output.WriteRawTag(50);
+        output.WriteMessage(Stop);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetPosition) {
+        output.WriteRawTag(58);
+        output.WriteMessage(SetPosition);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetVelocity) {
+        output.WriteRawTag(66);
+        output.WriteMessage(SetVelocity);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1035,6 +1193,30 @@ namespace Sea {
         output.WriteRawTag(18);
         output.WriteMessage(Config);
       }
+      if (feedbackCase_ == FeedbackOneofCase.SetStiffness) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SetStiffness);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetDamping) {
+        output.WriteRawTag(34);
+        output.WriteMessage(SetDamping);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetWorkMode) {
+        output.WriteRawTag(42);
+        output.WriteMessage(SetWorkMode);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.Stop) {
+        output.WriteRawTag(50);
+        output.WriteMessage(Stop);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetPosition) {
+        output.WriteRawTag(58);
+        output.WriteMessage(SetPosition);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetVelocity) {
+        output.WriteRawTag(66);
+        output.WriteMessage(SetVelocity);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1050,6 +1232,24 @@ namespace Sea {
       }
       if (feedbackCase_ == FeedbackOneofCase.Config) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Config);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetStiffness) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SetStiffness);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetDamping) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SetDamping);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetWorkMode) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SetWorkMode);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.Stop) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Stop);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetPosition) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SetPosition);
+      }
+      if (feedbackCase_ == FeedbackOneofCase.SetVelocity) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SetVelocity);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1075,6 +1275,42 @@ namespace Sea {
             Config = new global::Sea.ConfigFeedback();
           }
           Config.MergeFrom(other.Config);
+          break;
+        case FeedbackOneofCase.SetStiffness:
+          if (SetStiffness == null) {
+            SetStiffness = new global::Sea.SetStiffnessFeedback();
+          }
+          SetStiffness.MergeFrom(other.SetStiffness);
+          break;
+        case FeedbackOneofCase.SetDamping:
+          if (SetDamping == null) {
+            SetDamping = new global::Sea.SetDampingFeedback();
+          }
+          SetDamping.MergeFrom(other.SetDamping);
+          break;
+        case FeedbackOneofCase.SetWorkMode:
+          if (SetWorkMode == null) {
+            SetWorkMode = new global::Sea.SetWorkModeFeedback();
+          }
+          SetWorkMode.MergeFrom(other.SetWorkMode);
+          break;
+        case FeedbackOneofCase.Stop:
+          if (Stop == null) {
+            Stop = new global::Sea.StopFeedback();
+          }
+          Stop.MergeFrom(other.Stop);
+          break;
+        case FeedbackOneofCase.SetPosition:
+          if (SetPosition == null) {
+            SetPosition = new global::Sea.SetPositionFeedback();
+          }
+          SetPosition.MergeFrom(other.SetPosition);
+          break;
+        case FeedbackOneofCase.SetVelocity:
+          if (SetVelocity == null) {
+            SetVelocity = new global::Sea.SetVelocityFeedback();
+          }
+          SetVelocity.MergeFrom(other.SetVelocity);
           break;
       }
 
@@ -1111,6 +1347,60 @@ namespace Sea {
             Config = subBuilder;
             break;
           }
+          case 26: {
+            global::Sea.SetStiffnessFeedback subBuilder = new global::Sea.SetStiffnessFeedback();
+            if (feedbackCase_ == FeedbackOneofCase.SetStiffness) {
+              subBuilder.MergeFrom(SetStiffness);
+            }
+            input.ReadMessage(subBuilder);
+            SetStiffness = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Sea.SetDampingFeedback subBuilder = new global::Sea.SetDampingFeedback();
+            if (feedbackCase_ == FeedbackOneofCase.SetDamping) {
+              subBuilder.MergeFrom(SetDamping);
+            }
+            input.ReadMessage(subBuilder);
+            SetDamping = subBuilder;
+            break;
+          }
+          case 42: {
+            global::Sea.SetWorkModeFeedback subBuilder = new global::Sea.SetWorkModeFeedback();
+            if (feedbackCase_ == FeedbackOneofCase.SetWorkMode) {
+              subBuilder.MergeFrom(SetWorkMode);
+            }
+            input.ReadMessage(subBuilder);
+            SetWorkMode = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Sea.StopFeedback subBuilder = new global::Sea.StopFeedback();
+            if (feedbackCase_ == FeedbackOneofCase.Stop) {
+              subBuilder.MergeFrom(Stop);
+            }
+            input.ReadMessage(subBuilder);
+            Stop = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Sea.SetPositionFeedback subBuilder = new global::Sea.SetPositionFeedback();
+            if (feedbackCase_ == FeedbackOneofCase.SetPosition) {
+              subBuilder.MergeFrom(SetPosition);
+            }
+            input.ReadMessage(subBuilder);
+            SetPosition = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Sea.SetVelocityFeedback subBuilder = new global::Sea.SetVelocityFeedback();
+            if (feedbackCase_ == FeedbackOneofCase.SetVelocity) {
+              subBuilder.MergeFrom(SetVelocity);
+            }
+            input.ReadMessage(subBuilder);
+            SetVelocity = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -1144,6 +1434,1590 @@ namespace Sea {
             Config = subBuilder;
             break;
           }
+          case 26: {
+            global::Sea.SetStiffnessFeedback subBuilder = new global::Sea.SetStiffnessFeedback();
+            if (feedbackCase_ == FeedbackOneofCase.SetStiffness) {
+              subBuilder.MergeFrom(SetStiffness);
+            }
+            input.ReadMessage(subBuilder);
+            SetStiffness = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Sea.SetDampingFeedback subBuilder = new global::Sea.SetDampingFeedback();
+            if (feedbackCase_ == FeedbackOneofCase.SetDamping) {
+              subBuilder.MergeFrom(SetDamping);
+            }
+            input.ReadMessage(subBuilder);
+            SetDamping = subBuilder;
+            break;
+          }
+          case 42: {
+            global::Sea.SetWorkModeFeedback subBuilder = new global::Sea.SetWorkModeFeedback();
+            if (feedbackCase_ == FeedbackOneofCase.SetWorkMode) {
+              subBuilder.MergeFrom(SetWorkMode);
+            }
+            input.ReadMessage(subBuilder);
+            SetWorkMode = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Sea.StopFeedback subBuilder = new global::Sea.StopFeedback();
+            if (feedbackCase_ == FeedbackOneofCase.Stop) {
+              subBuilder.MergeFrom(Stop);
+            }
+            input.ReadMessage(subBuilder);
+            Stop = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Sea.SetPositionFeedback subBuilder = new global::Sea.SetPositionFeedback();
+            if (feedbackCase_ == FeedbackOneofCase.SetPosition) {
+              subBuilder.MergeFrom(SetPosition);
+            }
+            input.ReadMessage(subBuilder);
+            SetPosition = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Sea.SetVelocityFeedback subBuilder = new global::Sea.SetVelocityFeedback();
+            if (feedbackCase_ == FeedbackOneofCase.SetVelocity) {
+              subBuilder.MergeFrom(SetVelocity);
+            }
+            input.ReadMessage(subBuilder);
+            SetVelocity = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class SetStiffnessFeedback : pb::IMessage<SetStiffnessFeedback>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SetStiffnessFeedback> _parser = new pb::MessageParser<SetStiffnessFeedback>(() => new SetStiffnessFeedback());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SetStiffnessFeedback> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetStiffnessFeedback() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetStiffnessFeedback(SetStiffnessFeedback other) : this() {
+      stiffness_ = other.stiffness_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetStiffnessFeedback Clone() {
+      return new SetStiffnessFeedback(this);
+    }
+
+    /// <summary>Field number for the "stiffness" field.</summary>
+    public const int StiffnessFieldNumber = 1;
+    private double stiffness_;
+    /// <summary>
+    /// in N/m
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Stiffness {
+      get { return stiffness_; }
+      set {
+        stiffness_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SetStiffnessFeedback);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SetStiffnessFeedback other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Stiffness, other.Stiffness)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Stiffness != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Stiffness);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Stiffness != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Stiffness);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Stiffness != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Stiffness);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Stiffness != 0D) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SetStiffnessFeedback other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Stiffness != 0D) {
+        Stiffness = other.Stiffness;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            Stiffness = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Stiffness = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class SetDampingFeedback : pb::IMessage<SetDampingFeedback>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SetDampingFeedback> _parser = new pb::MessageParser<SetDampingFeedback>(() => new SetDampingFeedback());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SetDampingFeedback> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetDampingFeedback() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetDampingFeedback(SetDampingFeedback other) : this() {
+      damping_ = other.damping_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetDampingFeedback Clone() {
+      return new SetDampingFeedback(this);
+    }
+
+    /// <summary>Field number for the "damping" field.</summary>
+    public const int DampingFieldNumber = 1;
+    private double damping_;
+    /// <summary>
+    /// in N/(m/s)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Damping {
+      get { return damping_; }
+      set {
+        damping_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SetDampingFeedback);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SetDampingFeedback other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Damping, other.Damping)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Damping != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Damping);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Damping != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Damping);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Damping != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Damping);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Damping != 0D) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SetDampingFeedback other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Damping != 0D) {
+        Damping = other.Damping;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            Damping = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Damping = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class SetWorkModeFeedback : pb::IMessage<SetWorkModeFeedback>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SetWorkModeFeedback> _parser = new pb::MessageParser<SetWorkModeFeedback>(() => new SetWorkModeFeedback());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SetWorkModeFeedback> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetWorkModeFeedback() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetWorkModeFeedback(SetWorkModeFeedback other) : this() {
+      workMode_ = other.workMode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetWorkModeFeedback Clone() {
+      return new SetWorkModeFeedback(this);
+    }
+
+    /// <summary>Field number for the "work_mode" field.</summary>
+    public const int WorkModeFieldNumber = 1;
+    private global::Sea.WorkMode workMode_ = global::Sea.WorkMode.Impedance;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Sea.WorkMode WorkMode {
+      get { return workMode_; }
+      set {
+        workMode_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SetWorkModeFeedback);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SetWorkModeFeedback other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (WorkMode != other.WorkMode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (WorkMode != global::Sea.WorkMode.Impedance) hash ^= WorkMode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (WorkMode != global::Sea.WorkMode.Impedance) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) WorkMode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (WorkMode != global::Sea.WorkMode.Impedance) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) WorkMode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (WorkMode != global::Sea.WorkMode.Impedance) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) WorkMode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SetWorkModeFeedback other) {
+      if (other == null) {
+        return;
+      }
+      if (other.WorkMode != global::Sea.WorkMode.Impedance) {
+        WorkMode = other.WorkMode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            WorkMode = (global::Sea.WorkMode) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            WorkMode = (global::Sea.WorkMode) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class StopFeedback : pb::IMessage<StopFeedback>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<StopFeedback> _parser = new pb::MessageParser<StopFeedback>(() => new StopFeedback());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<StopFeedback> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public StopFeedback() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public StopFeedback(StopFeedback other) : this() {
+      stop_ = other.stop_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public StopFeedback Clone() {
+      return new StopFeedback(this);
+    }
+
+    /// <summary>Field number for the "stop" field.</summary>
+    public const int StopFieldNumber = 1;
+    private bool stop_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Stop {
+      get { return stop_; }
+      set {
+        stop_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as StopFeedback);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(StopFeedback other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Stop != other.Stop) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Stop != false) hash ^= Stop.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Stop != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Stop);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Stop != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Stop);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Stop != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(StopFeedback other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Stop != false) {
+        Stop = other.Stop;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Stop = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Stop = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class SetPositionFeedback : pb::IMessage<SetPositionFeedback>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SetPositionFeedback> _parser = new pb::MessageParser<SetPositionFeedback>(() => new SetPositionFeedback());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SetPositionFeedback> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetPositionFeedback() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetPositionFeedback(SetPositionFeedback other) : this() {
+      pos_ = other.pos_;
+      maxVel_ = other.maxVel_;
+      maxAcc_ = other.maxAcc_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetPositionFeedback Clone() {
+      return new SetPositionFeedback(this);
+    }
+
+    /// <summary>Field number for the "pos" field.</summary>
+    public const int PosFieldNumber = 1;
+    private double pos_;
+    /// <summary>
+    /// in radians
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Pos {
+      get { return pos_; }
+      set {
+        pos_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "max_vel" field.</summary>
+    public const int MaxVelFieldNumber = 2;
+    private double maxVel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double MaxVel {
+      get { return maxVel_; }
+      set {
+        maxVel_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "max_acc" field.</summary>
+    public const int MaxAccFieldNumber = 3;
+    private double maxAcc_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double MaxAcc {
+      get { return maxAcc_; }
+      set {
+        maxAcc_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SetPositionFeedback);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SetPositionFeedback other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Pos, other.Pos)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(MaxVel, other.MaxVel)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(MaxAcc, other.MaxAcc)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Pos != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Pos);
+      if (MaxVel != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(MaxVel);
+      if (MaxAcc != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(MaxAcc);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Pos != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Pos);
+      }
+      if (MaxVel != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(MaxVel);
+      }
+      if (MaxAcc != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(MaxAcc);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Pos != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Pos);
+      }
+      if (MaxVel != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(MaxVel);
+      }
+      if (MaxAcc != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(MaxAcc);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Pos != 0D) {
+        size += 1 + 8;
+      }
+      if (MaxVel != 0D) {
+        size += 1 + 8;
+      }
+      if (MaxAcc != 0D) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SetPositionFeedback other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Pos != 0D) {
+        Pos = other.Pos;
+      }
+      if (other.MaxVel != 0D) {
+        MaxVel = other.MaxVel;
+      }
+      if (other.MaxAcc != 0D) {
+        MaxAcc = other.MaxAcc;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            Pos = input.ReadDouble();
+            break;
+          }
+          case 17: {
+            MaxVel = input.ReadDouble();
+            break;
+          }
+          case 25: {
+            MaxAcc = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Pos = input.ReadDouble();
+            break;
+          }
+          case 17: {
+            MaxVel = input.ReadDouble();
+            break;
+          }
+          case 25: {
+            MaxAcc = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class SetVelocityFeedback : pb::IMessage<SetVelocityFeedback>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SetVelocityFeedback> _parser = new pb::MessageParser<SetVelocityFeedback>(() => new SetVelocityFeedback());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SetVelocityFeedback> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetVelocityFeedback() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetVelocityFeedback(SetVelocityFeedback other) : this() {
+      vel_ = other.vel_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetVelocityFeedback Clone() {
+      return new SetVelocityFeedback(this);
+    }
+
+    /// <summary>Field number for the "vel" field.</summary>
+    public const int VelFieldNumber = 1;
+    private double vel_;
+    /// <summary>
+    /// in radians per second
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Vel {
+      get { return vel_; }
+      set {
+        vel_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SetVelocityFeedback);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SetVelocityFeedback other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Vel, other.Vel)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Vel != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Vel);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Vel != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Vel);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Vel != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Vel);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Vel != 0D) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SetVelocityFeedback other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Vel != 0D) {
+        Vel = other.Vel;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            Vel = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Vel = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// This command does not require any parameters.
+  /// </summary>
+  public sealed partial class GetStatusCommand : pb::IMessage<GetStatusCommand>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetStatusCommand> _parser = new pb::MessageParser<GetStatusCommand>(() => new GetStatusCommand());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetStatusCommand> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetStatusCommand() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetStatusCommand(GetStatusCommand other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetStatusCommand Clone() {
+      return new GetStatusCommand(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetStatusCommand);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetStatusCommand other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetStatusCommand other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// This command does not require any parameters.
+  /// </summary>
+  public sealed partial class GetConfigCommand : pb::IMessage<GetConfigCommand>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetConfigCommand> _parser = new pb::MessageParser<GetConfigCommand>(() => new GetConfigCommand());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetConfigCommand> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetConfigCommand() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetConfigCommand(GetConfigCommand other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetConfigCommand Clone() {
+      return new GetConfigCommand(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetConfigCommand);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetConfigCommand other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetConfigCommand other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
         }
       }
     }
@@ -1165,7 +3039,7 @@ namespace Sea {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1357,7 +3231,7 @@ namespace Sea {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1549,7 +3423,7 @@ namespace Sea {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1724,21 +3598,21 @@ namespace Sea {
 
   }
 
-  public sealed partial class EnableCommand : pb::IMessage<EnableCommand>
+  public sealed partial class StopCommand : pb::IMessage<StopCommand>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<EnableCommand> _parser = new pb::MessageParser<EnableCommand>(() => new EnableCommand());
+    private static readonly pb::MessageParser<StopCommand> _parser = new pb::MessageParser<StopCommand>(() => new StopCommand());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<EnableCommand> Parser { get { return _parser; } }
+    public static pb::MessageParser<StopCommand> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1749,7 +3623,7 @@ namespace Sea {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public EnableCommand() {
+    public StopCommand() {
       OnConstruction();
     }
 
@@ -1757,45 +3631,31 @@ namespace Sea {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public EnableCommand(EnableCommand other) : this() {
-      enable_ = other.enable_;
+    public StopCommand(StopCommand other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public EnableCommand Clone() {
-      return new EnableCommand(this);
-    }
-
-    /// <summary>Field number for the "enable" field.</summary>
-    public const int EnableFieldNumber = 1;
-    private bool enable_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Enable {
-      get { return enable_; }
-      set {
-        enable_ = value;
-      }
+    public StopCommand Clone() {
+      return new StopCommand(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as EnableCommand);
+      return Equals(other as StopCommand);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(EnableCommand other) {
+    public bool Equals(StopCommand other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Enable != other.Enable) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1803,7 +3663,6 @@ namespace Sea {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Enable != false) hash ^= Enable.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1822,10 +3681,6 @@ namespace Sea {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Enable != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(Enable);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1836,10 +3691,6 @@ namespace Sea {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Enable != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(Enable);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1850,9 +3701,6 @@ namespace Sea {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Enable != false) {
-        size += 1 + 1;
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1861,12 +3709,9 @@ namespace Sea {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(EnableCommand other) {
+    public void MergeFrom(StopCommand other) {
       if (other == null) {
         return;
-      }
-      if (other.Enable != false) {
-        Enable = other.Enable;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1883,10 +3728,6 @@ namespace Sea {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Enable = input.ReadBool();
-            break;
-          }
         }
       }
     #endif
@@ -1902,10 +3743,6 @@ namespace Sea {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            Enable = input.ReadBool();
-            break;
-          }
         }
       }
     }
@@ -1927,7 +3764,7 @@ namespace Sea {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1947,7 +3784,9 @@ namespace Sea {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SetPositionCommand(SetPositionCommand other) : this() {
-      position_ = other.position_;
+      pos_ = other.pos_;
+      maxVel_ = other.maxVel_;
+      maxAcc_ = other.maxAcc_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1957,18 +3796,42 @@ namespace Sea {
       return new SetPositionCommand(this);
     }
 
-    /// <summary>Field number for the "position" field.</summary>
-    public const int PositionFieldNumber = 1;
-    private double position_;
+    /// <summary>Field number for the "pos" field.</summary>
+    public const int PosFieldNumber = 1;
+    private double pos_;
     /// <summary>
     /// in radians
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public double Position {
-      get { return position_; }
+    public double Pos {
+      get { return pos_; }
       set {
-        position_ = value;
+        pos_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "max_vel" field.</summary>
+    public const int MaxVelFieldNumber = 2;
+    private double maxVel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double MaxVel {
+      get { return maxVel_; }
+      set {
+        maxVel_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "max_acc" field.</summary>
+    public const int MaxAccFieldNumber = 3;
+    private double maxAcc_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double MaxAcc {
+      get { return maxAcc_; }
+      set {
+        maxAcc_ = value;
       }
     }
 
@@ -1987,7 +3850,9 @@ namespace Sea {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Position, other.Position)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Pos, other.Pos)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(MaxVel, other.MaxVel)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(MaxAcc, other.MaxAcc)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1995,7 +3860,9 @@ namespace Sea {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Position != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Position);
+      if (Pos != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Pos);
+      if (MaxVel != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(MaxVel);
+      if (MaxAcc != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(MaxAcc);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2014,9 +3881,17 @@ namespace Sea {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Position != 0D) {
+      if (Pos != 0D) {
         output.WriteRawTag(9);
-        output.WriteDouble(Position);
+        output.WriteDouble(Pos);
+      }
+      if (MaxVel != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(MaxVel);
+      }
+      if (MaxAcc != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(MaxAcc);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2028,9 +3903,17 @@ namespace Sea {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Position != 0D) {
+      if (Pos != 0D) {
         output.WriteRawTag(9);
-        output.WriteDouble(Position);
+        output.WriteDouble(Pos);
+      }
+      if (MaxVel != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(MaxVel);
+      }
+      if (MaxAcc != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(MaxAcc);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2042,7 +3925,13 @@ namespace Sea {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Position != 0D) {
+      if (Pos != 0D) {
+        size += 1 + 8;
+      }
+      if (MaxVel != 0D) {
+        size += 1 + 8;
+      }
+      if (MaxAcc != 0D) {
         size += 1 + 8;
       }
       if (_unknownFields != null) {
@@ -2057,8 +3946,14 @@ namespace Sea {
       if (other == null) {
         return;
       }
-      if (other.Position != 0D) {
-        Position = other.Position;
+      if (other.Pos != 0D) {
+        Pos = other.Pos;
+      }
+      if (other.MaxVel != 0D) {
+        MaxVel = other.MaxVel;
+      }
+      if (other.MaxAcc != 0D) {
+        MaxAcc = other.MaxAcc;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2076,7 +3971,15 @@ namespace Sea {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 9: {
-            Position = input.ReadDouble();
+            Pos = input.ReadDouble();
+            break;
+          }
+          case 17: {
+            MaxVel = input.ReadDouble();
+            break;
+          }
+          case 25: {
+            MaxAcc = input.ReadDouble();
             break;
           }
         }
@@ -2095,7 +3998,15 @@ namespace Sea {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 9: {
-            Position = input.ReadDouble();
+            Pos = input.ReadDouble();
+            break;
+          }
+          case 17: {
+            MaxVel = input.ReadDouble();
+            break;
+          }
+          case 25: {
+            MaxAcc = input.ReadDouble();
             break;
           }
         }
@@ -2119,7 +4030,7 @@ namespace Sea {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2139,7 +4050,7 @@ namespace Sea {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SetVelocityCommand(SetVelocityCommand other) : this() {
-      velocity_ = other.velocity_;
+      vel_ = other.vel_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2149,18 +4060,18 @@ namespace Sea {
       return new SetVelocityCommand(this);
     }
 
-    /// <summary>Field number for the "velocity" field.</summary>
-    public const int VelocityFieldNumber = 1;
-    private double velocity_;
+    /// <summary>Field number for the "vel" field.</summary>
+    public const int VelFieldNumber = 1;
+    private double vel_;
     /// <summary>
     /// in radians per second
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public double Velocity {
-      get { return velocity_; }
+    public double Vel {
+      get { return vel_; }
       set {
-        velocity_ = value;
+        vel_ = value;
       }
     }
 
@@ -2179,7 +4090,7 @@ namespace Sea {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Velocity, other.Velocity)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Vel, other.Vel)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2187,7 +4098,7 @@ namespace Sea {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Velocity != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Velocity);
+      if (Vel != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Vel);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2206,9 +4117,9 @@ namespace Sea {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Velocity != 0D) {
+      if (Vel != 0D) {
         output.WriteRawTag(9);
-        output.WriteDouble(Velocity);
+        output.WriteDouble(Vel);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2220,9 +4131,9 @@ namespace Sea {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Velocity != 0D) {
+      if (Vel != 0D) {
         output.WriteRawTag(9);
-        output.WriteDouble(Velocity);
+        output.WriteDouble(Vel);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2234,7 +4145,7 @@ namespace Sea {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Velocity != 0D) {
+      if (Vel != 0D) {
         size += 1 + 8;
       }
       if (_unknownFields != null) {
@@ -2249,8 +4160,8 @@ namespace Sea {
       if (other == null) {
         return;
       }
-      if (other.Velocity != 0D) {
-        Velocity = other.Velocity;
+      if (other.Vel != 0D) {
+        Vel = other.Vel;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2268,7 +4179,7 @@ namespace Sea {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 9: {
-            Velocity = input.ReadDouble();
+            Vel = input.ReadDouble();
             break;
           }
         }
@@ -2287,7 +4198,7 @@ namespace Sea {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 9: {
-            Velocity = input.ReadDouble();
+            Vel = input.ReadDouble();
             break;
           }
         }
@@ -2311,7 +4222,7 @@ namespace Sea {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Sea.SeaReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2341,14 +4252,20 @@ namespace Sea {
         case CommandOneofCase.SetWorkMode:
           SetWorkMode = other.SetWorkMode.Clone();
           break;
-        case CommandOneofCase.Enable:
-          Enable = other.Enable.Clone();
+        case CommandOneofCase.Stop:
+          Stop = other.Stop.Clone();
           break;
         case CommandOneofCase.SetPosition:
           SetPosition = other.SetPosition.Clone();
           break;
         case CommandOneofCase.SetVelocity:
           SetVelocity = other.SetVelocity.Clone();
+          break;
+        case CommandOneofCase.GetStatus:
+          GetStatus = other.GetStatus.Clone();
+          break;
+        case CommandOneofCase.GetConfig:
+          GetConfig = other.GetConfig.Clone();
           break;
       }
 
@@ -2387,6 +4304,9 @@ namespace Sea {
 
     /// <summary>Field number for the "set_work_mode" field.</summary>
     public const int SetWorkModeFieldNumber = 3;
+    /// <summary>
+    /// 设置工作模式，同时会进入Running状态
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Sea.SetWorkModeCommand SetWorkMode {
@@ -2397,15 +4317,18 @@ namespace Sea {
       }
     }
 
-    /// <summary>Field number for the "enable" field.</summary>
-    public const int EnableFieldNumber = 4;
+    /// <summary>Field number for the "stop" field.</summary>
+    public const int StopFieldNumber = 4;
+    /// <summary>
+    /// 其实就是stopped状态
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Sea.EnableCommand Enable {
-      get { return commandCase_ == CommandOneofCase.Enable ? (global::Sea.EnableCommand) command_ : null; }
+    public global::Sea.StopCommand Stop {
+      get { return commandCase_ == CommandOneofCase.Stop ? (global::Sea.StopCommand) command_ : null; }
       set {
         command_ = value;
-        commandCase_ = value == null ? CommandOneofCase.None : CommandOneofCase.Enable;
+        commandCase_ = value == null ? CommandOneofCase.None : CommandOneofCase.Stop;
       }
     }
 
@@ -2433,6 +4356,30 @@ namespace Sea {
       }
     }
 
+    /// <summary>Field number for the "get_status" field.</summary>
+    public const int GetStatusFieldNumber = 7;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Sea.GetStatusCommand GetStatus {
+      get { return commandCase_ == CommandOneofCase.GetStatus ? (global::Sea.GetStatusCommand) command_ : null; }
+      set {
+        command_ = value;
+        commandCase_ = value == null ? CommandOneofCase.None : CommandOneofCase.GetStatus;
+      }
+    }
+
+    /// <summary>Field number for the "get_config" field.</summary>
+    public const int GetConfigFieldNumber = 8;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Sea.GetConfigCommand GetConfig {
+      get { return commandCase_ == CommandOneofCase.GetConfig ? (global::Sea.GetConfigCommand) command_ : null; }
+      set {
+        command_ = value;
+        commandCase_ = value == null ? CommandOneofCase.None : CommandOneofCase.GetConfig;
+      }
+    }
+
     private object command_;
     /// <summary>Enum of possible cases for the "command" oneof.</summary>
     public enum CommandOneofCase {
@@ -2440,9 +4387,11 @@ namespace Sea {
       SetStiffness = 1,
       SetDamping = 2,
       SetWorkMode = 3,
-      Enable = 4,
+      Stop = 4,
       SetPosition = 5,
       SetVelocity = 6,
+      GetStatus = 7,
+      GetConfig = 8,
     }
     private CommandOneofCase commandCase_ = CommandOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2476,9 +4425,11 @@ namespace Sea {
       if (!object.Equals(SetStiffness, other.SetStiffness)) return false;
       if (!object.Equals(SetDamping, other.SetDamping)) return false;
       if (!object.Equals(SetWorkMode, other.SetWorkMode)) return false;
-      if (!object.Equals(Enable, other.Enable)) return false;
+      if (!object.Equals(Stop, other.Stop)) return false;
       if (!object.Equals(SetPosition, other.SetPosition)) return false;
       if (!object.Equals(SetVelocity, other.SetVelocity)) return false;
+      if (!object.Equals(GetStatus, other.GetStatus)) return false;
+      if (!object.Equals(GetConfig, other.GetConfig)) return false;
       if (CommandCase != other.CommandCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2490,9 +4441,11 @@ namespace Sea {
       if (commandCase_ == CommandOneofCase.SetStiffness) hash ^= SetStiffness.GetHashCode();
       if (commandCase_ == CommandOneofCase.SetDamping) hash ^= SetDamping.GetHashCode();
       if (commandCase_ == CommandOneofCase.SetWorkMode) hash ^= SetWorkMode.GetHashCode();
-      if (commandCase_ == CommandOneofCase.Enable) hash ^= Enable.GetHashCode();
+      if (commandCase_ == CommandOneofCase.Stop) hash ^= Stop.GetHashCode();
       if (commandCase_ == CommandOneofCase.SetPosition) hash ^= SetPosition.GetHashCode();
       if (commandCase_ == CommandOneofCase.SetVelocity) hash ^= SetVelocity.GetHashCode();
+      if (commandCase_ == CommandOneofCase.GetStatus) hash ^= GetStatus.GetHashCode();
+      if (commandCase_ == CommandOneofCase.GetConfig) hash ^= GetConfig.GetHashCode();
       hash ^= (int) commandCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2524,9 +4477,9 @@ namespace Sea {
         output.WriteRawTag(26);
         output.WriteMessage(SetWorkMode);
       }
-      if (commandCase_ == CommandOneofCase.Enable) {
+      if (commandCase_ == CommandOneofCase.Stop) {
         output.WriteRawTag(34);
-        output.WriteMessage(Enable);
+        output.WriteMessage(Stop);
       }
       if (commandCase_ == CommandOneofCase.SetPosition) {
         output.WriteRawTag(42);
@@ -2535,6 +4488,14 @@ namespace Sea {
       if (commandCase_ == CommandOneofCase.SetVelocity) {
         output.WriteRawTag(50);
         output.WriteMessage(SetVelocity);
+      }
+      if (commandCase_ == CommandOneofCase.GetStatus) {
+        output.WriteRawTag(58);
+        output.WriteMessage(GetStatus);
+      }
+      if (commandCase_ == CommandOneofCase.GetConfig) {
+        output.WriteRawTag(66);
+        output.WriteMessage(GetConfig);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2558,9 +4519,9 @@ namespace Sea {
         output.WriteRawTag(26);
         output.WriteMessage(SetWorkMode);
       }
-      if (commandCase_ == CommandOneofCase.Enable) {
+      if (commandCase_ == CommandOneofCase.Stop) {
         output.WriteRawTag(34);
-        output.WriteMessage(Enable);
+        output.WriteMessage(Stop);
       }
       if (commandCase_ == CommandOneofCase.SetPosition) {
         output.WriteRawTag(42);
@@ -2569,6 +4530,14 @@ namespace Sea {
       if (commandCase_ == CommandOneofCase.SetVelocity) {
         output.WriteRawTag(50);
         output.WriteMessage(SetVelocity);
+      }
+      if (commandCase_ == CommandOneofCase.GetStatus) {
+        output.WriteRawTag(58);
+        output.WriteMessage(GetStatus);
+      }
+      if (commandCase_ == CommandOneofCase.GetConfig) {
+        output.WriteRawTag(66);
+        output.WriteMessage(GetConfig);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2589,14 +4558,20 @@ namespace Sea {
       if (commandCase_ == CommandOneofCase.SetWorkMode) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SetWorkMode);
       }
-      if (commandCase_ == CommandOneofCase.Enable) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Enable);
+      if (commandCase_ == CommandOneofCase.Stop) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Stop);
       }
       if (commandCase_ == CommandOneofCase.SetPosition) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SetPosition);
       }
       if (commandCase_ == CommandOneofCase.SetVelocity) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SetVelocity);
+      }
+      if (commandCase_ == CommandOneofCase.GetStatus) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetStatus);
+      }
+      if (commandCase_ == CommandOneofCase.GetConfig) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetConfig);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2629,11 +4604,11 @@ namespace Sea {
           }
           SetWorkMode.MergeFrom(other.SetWorkMode);
           break;
-        case CommandOneofCase.Enable:
-          if (Enable == null) {
-            Enable = new global::Sea.EnableCommand();
+        case CommandOneofCase.Stop:
+          if (Stop == null) {
+            Stop = new global::Sea.StopCommand();
           }
-          Enable.MergeFrom(other.Enable);
+          Stop.MergeFrom(other.Stop);
           break;
         case CommandOneofCase.SetPosition:
           if (SetPosition == null) {
@@ -2646,6 +4621,18 @@ namespace Sea {
             SetVelocity = new global::Sea.SetVelocityCommand();
           }
           SetVelocity.MergeFrom(other.SetVelocity);
+          break;
+        case CommandOneofCase.GetStatus:
+          if (GetStatus == null) {
+            GetStatus = new global::Sea.GetStatusCommand();
+          }
+          GetStatus.MergeFrom(other.GetStatus);
+          break;
+        case CommandOneofCase.GetConfig:
+          if (GetConfig == null) {
+            GetConfig = new global::Sea.GetConfigCommand();
+          }
+          GetConfig.MergeFrom(other.GetConfig);
           break;
       }
 
@@ -2692,12 +4679,12 @@ namespace Sea {
             break;
           }
           case 34: {
-            global::Sea.EnableCommand subBuilder = new global::Sea.EnableCommand();
-            if (commandCase_ == CommandOneofCase.Enable) {
-              subBuilder.MergeFrom(Enable);
+            global::Sea.StopCommand subBuilder = new global::Sea.StopCommand();
+            if (commandCase_ == CommandOneofCase.Stop) {
+              subBuilder.MergeFrom(Stop);
             }
             input.ReadMessage(subBuilder);
-            Enable = subBuilder;
+            Stop = subBuilder;
             break;
           }
           case 42: {
@@ -2716,6 +4703,24 @@ namespace Sea {
             }
             input.ReadMessage(subBuilder);
             SetVelocity = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Sea.GetStatusCommand subBuilder = new global::Sea.GetStatusCommand();
+            if (commandCase_ == CommandOneofCase.GetStatus) {
+              subBuilder.MergeFrom(GetStatus);
+            }
+            input.ReadMessage(subBuilder);
+            GetStatus = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Sea.GetConfigCommand subBuilder = new global::Sea.GetConfigCommand();
+            if (commandCase_ == CommandOneofCase.GetConfig) {
+              subBuilder.MergeFrom(GetConfig);
+            }
+            input.ReadMessage(subBuilder);
+            GetConfig = subBuilder;
             break;
           }
         }
@@ -2761,12 +4766,12 @@ namespace Sea {
             break;
           }
           case 34: {
-            global::Sea.EnableCommand subBuilder = new global::Sea.EnableCommand();
-            if (commandCase_ == CommandOneofCase.Enable) {
-              subBuilder.MergeFrom(Enable);
+            global::Sea.StopCommand subBuilder = new global::Sea.StopCommand();
+            if (commandCase_ == CommandOneofCase.Stop) {
+              subBuilder.MergeFrom(Stop);
             }
             input.ReadMessage(subBuilder);
-            Enable = subBuilder;
+            Stop = subBuilder;
             break;
           }
           case 42: {
@@ -2785,6 +4790,24 @@ namespace Sea {
             }
             input.ReadMessage(subBuilder);
             SetVelocity = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Sea.GetStatusCommand subBuilder = new global::Sea.GetStatusCommand();
+            if (commandCase_ == CommandOneofCase.GetStatus) {
+              subBuilder.MergeFrom(GetStatus);
+            }
+            input.ReadMessage(subBuilder);
+            GetStatus = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Sea.GetConfigCommand subBuilder = new global::Sea.GetConfigCommand();
+            if (commandCase_ == CommandOneofCase.GetConfig) {
+              subBuilder.MergeFrom(GetConfig);
+            }
+            input.ReadMessage(subBuilder);
+            GetConfig = subBuilder;
             break;
           }
         }
