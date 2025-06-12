@@ -12,6 +12,7 @@ public class PanelSwitch : MonoBehaviour
     public GameObject VelocityPanel;
     public GameObject ImpedancePanel;
     public GameObject ZeroforcePanel;
+    public GameObject StatusPanel;
 
 
     enum PanelState
@@ -71,11 +72,11 @@ public class PanelSwitch : MonoBehaviour
     {
         if (show)
         {
-            PositionPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(180 ,-85), 0.5f);
+            PositionPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(180 ,-304), 0.5f);
         }
         else
         {
-            PositionPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(-1029 ,-85), 0.5f);
+            PositionPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(-1029 ,-304), 0.5f);
         }
     }
     
@@ -83,11 +84,11 @@ public class PanelSwitch : MonoBehaviour
     {
         if (show)
         {
-            VelocityPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(180 ,-85), 0.5f);
+            VelocityPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(180 ,-304), 0.5f);
         }
         else
         {
-            VelocityPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(-1921 ,-85), 0.5f);
+            VelocityPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(-1921 ,-304), 0.5f);
         }
     }
     
@@ -95,11 +96,11 @@ public class PanelSwitch : MonoBehaviour
     {
         if (show)
         {
-            ImpedancePanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(180 ,-85), 0.5f);
+            ImpedancePanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(180 ,-304), 0.5f);
         }
         else
         {
-            ImpedancePanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(-2822 ,-85), 0.5f);
+            ImpedancePanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(-2822 ,-304), 0.5f);
         }
     }
     
@@ -107,11 +108,23 @@ public class PanelSwitch : MonoBehaviour
     {
         if (show)
         {
-            ZeroforcePanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(180 ,-85), 0.5f);
+            ZeroforcePanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(180 ,-304), 0.5f);
         }
         else
         {
-            ZeroforcePanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(-3720 ,-85), 0.5f);
+            ZeroforcePanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(-3720 ,-304), 0.5f);
+        }
+    }
+    
+    private void ShowStatusPanel(bool show)
+    {
+        if (show)
+        {
+            StatusPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(180 ,100), 0.5f);
+        }
+        else
+        {
+            StatusPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(-1029 ,100), 0.5f);
         }
     }
     
@@ -132,6 +145,7 @@ public class PanelSwitch : MonoBehaviour
             ShowVelocityPanel(false);
             ShowImpedancePanel(false);
             ShowZeroforcePanel(false);
+            ShowStatusPanel(false);
 
             current_panel = PanelState.MAIN;
         }
@@ -153,6 +167,7 @@ public class PanelSwitch : MonoBehaviour
             ShowVelocityPanel(false);
             ShowImpedancePanel(false);
             ShowZeroforcePanel(false);
+            ShowStatusPanel(true);
 
 
             current_panel = PanelState.POSITION;
@@ -175,6 +190,7 @@ public class PanelSwitch : MonoBehaviour
             ShowVelocityPanel(true);
             ShowImpedancePanel(false);
             ShowZeroforcePanel(false);
+            ShowStatusPanel(true);
 
             current_panel = PanelState.VELOCITY;
         }
@@ -196,6 +212,7 @@ public class PanelSwitch : MonoBehaviour
             ShowVelocityPanel(false);
             ShowImpedancePanel(true);
             ShowZeroforcePanel(false);
+            ShowStatusPanel(true);
 
             current_panel = PanelState.IMPEDANCE;
         }
@@ -217,6 +234,7 @@ public class PanelSwitch : MonoBehaviour
             ShowVelocityPanel(false);
             ShowImpedancePanel(false);
             ShowZeroforcePanel(true);
+            ShowStatusPanel(true);
 
 
             current_panel = PanelState.ZEROFORCE;
