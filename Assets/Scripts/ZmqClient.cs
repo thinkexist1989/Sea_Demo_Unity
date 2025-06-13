@@ -659,7 +659,7 @@ public class ZmqClient : MonoBehaviour
         double externalForce = feedback.ExternalForce;
         externalForceText.text = externalForce.ToString("F2")  + " Nm"; // 保留两位小数
 
-        twistDeformer.value = (float)feedback.SpringAngle * Mathf.Rad2Deg;;
+        twistDeformer.value = -(float)feedback.SpringAngle * Mathf.Rad2Deg;;
         
         
     }
