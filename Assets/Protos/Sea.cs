@@ -28,7 +28,7 @@ namespace Sea {
             "YXRlGAEgASgOMg0uc2VhLlJ1blN0YXRlEiAKCXdvcmtfbW9kZRgCIAEoDjIN",
             "LnNlYS5Xb3JrTW9kZRIYChBjdXJyZW50X3Bvc2l0aW9uGAMgASgBEhgKEGN1",
             "cnJlbnRfdmVsb2NpdHkYBCABKAESGQoRZW5jb2RlcjFfZmVlZGJhY2sYBSAB",
-            "KAUSGQoRZW5jb2RlcjJfZmVlZGJhY2sYBiABKAUSFgoOZXh0ZXJuYWxfZm9y",
+            "KAESGQoRZW5jb2RlcjJfZmVlZGJhY2sYBiABKAESFgoOZXh0ZXJuYWxfZm9y",
             "Y2UYByABKAESEQoJc3RpZmZuZXNzGAggASgBEg8KB2RhbXBpbmcYCSABKAES",
             "FAoMc3ByaW5nX2FuZ2xlGAogASgBImQKDkNvbmZpZ0ZlZWRiYWNrEhsKE2Vu",
             "Y29kZXIxX3Jlc29sdXRpb24YASABKAUSGwoTZW5jb2RlcjJfcmVzb2x1dGlv",
@@ -228,13 +228,13 @@ namespace Sea {
 
     /// <summary>Field number for the "encoder1_feedback" field.</summary>
     public const int Encoder1FeedbackFieldNumber = 5;
-    private int encoder1Feedback_;
+    private double encoder1Feedback_;
     /// <summary>
     /// in counts
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Encoder1Feedback {
+    public double Encoder1Feedback {
       get { return encoder1Feedback_; }
       set {
         encoder1Feedback_ = value;
@@ -243,13 +243,13 @@ namespace Sea {
 
     /// <summary>Field number for the "encoder2_feedback" field.</summary>
     public const int Encoder2FeedbackFieldNumber = 6;
-    private int encoder2Feedback_;
+    private double encoder2Feedback_;
     /// <summary>
     /// in counts
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Encoder2Feedback {
+    public double Encoder2Feedback {
       get { return encoder2Feedback_; }
       set {
         encoder2Feedback_ = value;
@@ -335,8 +335,8 @@ namespace Sea {
       if (WorkMode != other.WorkMode) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CurrentPosition, other.CurrentPosition)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CurrentVelocity, other.CurrentVelocity)) return false;
-      if (Encoder1Feedback != other.Encoder1Feedback) return false;
-      if (Encoder2Feedback != other.Encoder2Feedback) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Encoder1Feedback, other.Encoder1Feedback)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Encoder2Feedback, other.Encoder2Feedback)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ExternalForce, other.ExternalForce)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Stiffness, other.Stiffness)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Damping, other.Damping)) return false;
@@ -352,8 +352,8 @@ namespace Sea {
       if (WorkMode != global::Sea.WorkMode.Impedance) hash ^= WorkMode.GetHashCode();
       if (CurrentPosition != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CurrentPosition);
       if (CurrentVelocity != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CurrentVelocity);
-      if (Encoder1Feedback != 0) hash ^= Encoder1Feedback.GetHashCode();
-      if (Encoder2Feedback != 0) hash ^= Encoder2Feedback.GetHashCode();
+      if (Encoder1Feedback != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Encoder1Feedback);
+      if (Encoder2Feedback != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Encoder2Feedback);
       if (ExternalForce != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ExternalForce);
       if (Stiffness != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Stiffness);
       if (Damping != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Damping);
@@ -392,13 +392,13 @@ namespace Sea {
         output.WriteRawTag(33);
         output.WriteDouble(CurrentVelocity);
       }
-      if (Encoder1Feedback != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(Encoder1Feedback);
+      if (Encoder1Feedback != 0D) {
+        output.WriteRawTag(41);
+        output.WriteDouble(Encoder1Feedback);
       }
-      if (Encoder2Feedback != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(Encoder2Feedback);
+      if (Encoder2Feedback != 0D) {
+        output.WriteRawTag(49);
+        output.WriteDouble(Encoder2Feedback);
       }
       if (ExternalForce != 0D) {
         output.WriteRawTag(57);
@@ -442,13 +442,13 @@ namespace Sea {
         output.WriteRawTag(33);
         output.WriteDouble(CurrentVelocity);
       }
-      if (Encoder1Feedback != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(Encoder1Feedback);
+      if (Encoder1Feedback != 0D) {
+        output.WriteRawTag(41);
+        output.WriteDouble(Encoder1Feedback);
       }
-      if (Encoder2Feedback != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(Encoder2Feedback);
+      if (Encoder2Feedback != 0D) {
+        output.WriteRawTag(49);
+        output.WriteDouble(Encoder2Feedback);
       }
       if (ExternalForce != 0D) {
         output.WriteRawTag(57);
@@ -488,11 +488,11 @@ namespace Sea {
       if (CurrentVelocity != 0D) {
         size += 1 + 8;
       }
-      if (Encoder1Feedback != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Encoder1Feedback);
+      if (Encoder1Feedback != 0D) {
+        size += 1 + 8;
       }
-      if (Encoder2Feedback != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Encoder2Feedback);
+      if (Encoder2Feedback != 0D) {
+        size += 1 + 8;
       }
       if (ExternalForce != 0D) {
         size += 1 + 8;
@@ -530,10 +530,10 @@ namespace Sea {
       if (other.CurrentVelocity != 0D) {
         CurrentVelocity = other.CurrentVelocity;
       }
-      if (other.Encoder1Feedback != 0) {
+      if (other.Encoder1Feedback != 0D) {
         Encoder1Feedback = other.Encoder1Feedback;
       }
-      if (other.Encoder2Feedback != 0) {
+      if (other.Encoder2Feedback != 0D) {
         Encoder2Feedback = other.Encoder2Feedback;
       }
       if (other.ExternalForce != 0D) {
@@ -579,12 +579,12 @@ namespace Sea {
             CurrentVelocity = input.ReadDouble();
             break;
           }
-          case 40: {
-            Encoder1Feedback = input.ReadInt32();
+          case 41: {
+            Encoder1Feedback = input.ReadDouble();
             break;
           }
-          case 48: {
-            Encoder2Feedback = input.ReadInt32();
+          case 49: {
+            Encoder2Feedback = input.ReadDouble();
             break;
           }
           case 57: {
@@ -634,12 +634,12 @@ namespace Sea {
             CurrentVelocity = input.ReadDouble();
             break;
           }
-          case 40: {
-            Encoder1Feedback = input.ReadInt32();
+          case 41: {
+            Encoder1Feedback = input.ReadDouble();
             break;
           }
-          case 48: {
-            Encoder2Feedback = input.ReadInt32();
+          case 49: {
+            Encoder2Feedback = input.ReadDouble();
             break;
           }
           case 57: {

@@ -657,7 +657,7 @@ public class ZmqClient : MonoBehaviour
         encoder2Text.text = encoder2Deg.ToString("F2") + " °"; // 保留两位小数
         // 外力
         double externalForce = feedback.ExternalForce;
-        externalForceText.text = externalForce.ToString("F2")  + " N"; // 保留两位小数
+        externalForceText.text = externalForce.ToString("F2")  + " Nm"; // 保留两位小数
 
         twistDeformer.value = (float)feedback.SpringAngle * Mathf.Rad2Deg;;
         
