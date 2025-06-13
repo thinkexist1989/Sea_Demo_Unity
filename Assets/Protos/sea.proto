@@ -32,11 +32,12 @@ message StatusFeedback {
   double stiffness = 8; // in N/m 模拟刚度
   double damping = 9; // in N/(m/s) 模拟阻尼
   
+  double spring_angle = 10; // 扭簧角度，单位为弧度
 }
 
 message ConfigFeedback {
-  int32 encoder1_resolution = 1; // in counts
-  int32 encoder2_resolution = 2; // in counts
+  int32 encoder1_resolution = 1; // in cnt/r
+  int32 encoder2_resolution = 2; // in cnt/r
   double spring_stiffness = 3; // in N/m
 }
 
@@ -50,6 +51,7 @@ message ControlFeedback {
     StopFeedback stop = 6;
     SetPositionFeedback set_position = 7;
     SetVelocityFeedback set_velocity = 8;
+    ResetFeedback reset = 9; // 重置设备到初始状态
   }
 }
 
@@ -79,6 +81,11 @@ message SetVelocityFeedback {
   double vel = 1; // in radians per second
 }
 
+message ResetFeedback {
+  // This message does not require any fields.
+  // It is used to acknowledge the reset command.
+}
+
 
 
 
@@ -106,6 +113,11 @@ message SetWorkModeCommand {
 message StopCommand {
 }
 
+message ResetCommand {
+  // This command does not require any parameters.
+  // It is used to reset the device to its initial state.
+}
+
 message SetPositionCommand {
   double pos = 1; // in radians
   double max_vel = 2;
@@ -126,5 +138,6 @@ message ControlCommand {
     SetVelocityCommand set_velocity = 6;
     GetStatusCommand get_status = 7;
     GetConfigCommand get_config = 8;
+    ResetCommand reset = 9; // 重置设备到初始状态
   }
 }
