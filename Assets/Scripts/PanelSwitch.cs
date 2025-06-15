@@ -13,6 +13,9 @@ public class PanelSwitch : MonoBehaviour
     public GameObject ImpedancePanel;
     public GameObject ZeroforcePanel;
     public GameObject StatusPanel;
+    public GameObject paramPanel;
+    public GameObject aboutPanel;
+    
 
 
     enum PanelState
@@ -26,6 +29,9 @@ public class PanelSwitch : MonoBehaviour
 
     private PanelState current_panel = PanelState.MAIN;
     private PanelState request_panel = PanelState.MAIN;
+
+    private bool isParamShow = false;
+    private bool isAboutShow = false;
     
     // Start is called before the first frame update
     void Start()
@@ -128,6 +134,43 @@ public class PanelSwitch : MonoBehaviour
         }
     }
     
+    private void ShowParamPanel(bool show)
+    {
+        isParamShow = show;
+        
+        if (show)
+        {
+            paramPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(180 ,100), 0.5f);
+        }
+        else
+        {
+            paramPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(-1921 ,100), 0.5f);
+        }
+    }
+    
+    private void ShowAboutPanel(bool show)
+    {
+        isAboutShow = show;
+        
+        if (show)
+        {
+            aboutPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(180 ,-85), 0.5f);
+        }
+        else
+        {
+            aboutPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(-4605 ,-85), 0.5f);
+        }
+    }
+
+    public void SwitchAboutPanel()
+    {
+        ShowAboutPanel(!isAboutShow);
+    }
+    
+    public void SwitchParamPanel()
+    {
+        ShowParamPanel(!isParamShow);
+    }
 
     public void SwitchToMainPanel()
     {
@@ -146,6 +189,8 @@ public class PanelSwitch : MonoBehaviour
             ShowImpedancePanel(false);
             ShowZeroforcePanel(false);
             ShowStatusPanel(false);
+            ShowParamPanel(false);
+            ShowAboutPanel(false);
 
             current_panel = PanelState.MAIN;
         }
