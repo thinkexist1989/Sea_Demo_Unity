@@ -56,16 +56,17 @@ public class ZmqClient : MonoBehaviour
     public TMP_Text currentWorkModeText;
     public TMP_Text currentPosText;
     public TMP_Text currentVelText;
-    public TMP_Text encoder1Text;
-    public TMP_Text encoder2Text;
+    public TMP_Text springAngleText;
     public TMP_Text externalForceText;
     public TwistDeformer twistDeformer;
+    public JntCtrl jntCtrl;
     
     [Header("配置显示")]
     public TMP_Text encoder1ResText;
     public TMP_Text encoder2ResText;
     public TMP_Text springStiffnessText;
-    
+    public TMP_Text encoder1Text;
+    public TMP_Text encoder2Text;
     
     // private Thread zmqThread;
     private RequestSocket socket;
@@ -151,9 +152,26 @@ public class ZmqClient : MonoBehaviour
         {
             if (is_connected)
             {
-                
+                SetWorkMode(WorkMode.Position);
+            }
+            else
+            {
+                Debug.LogWarning("请先连接到服务器");
             }
         });
+
+        moveToPosButton.onClick.AddListener(() =>
+        {
+            if (is_connected)
+            {
+                SetPosition(float.Parse(targetPos.text), float.Parse(maxVel.text), float.Parse(maxAcc.text));
+            }
+            else
+            {
+                Debug.LogWarning("请先连接到服务器");
+            }
+        });
+        
 
         
         // 阻抗模式
@@ -191,6 +209,19 @@ public class ZmqClient : MonoBehaviour
             if (is_connected)
             {
                 SetDamping(float.Parse(damping.text));
+            }
+            else
+            {
+                Debug.LogWarning("请先连接到服务器");
+            }
+        });
+        
+        // 零力模式
+        setZeroforceModeButton.onClick.AddListener(() =>
+        {
+            if (is_connected)
+            {
+                SetWorkMode(WorkMode.ZeroForce);
             }
             else
             {
@@ -284,6 +315,56 @@ public class ZmqClient : MonoBehaviour
                 if (feedback.FeedbackCase == ControlFeedback.FeedbackOneofCase.SetWorkMode)
                 {
                     Debug.Log($"工作模式设置成功: {feedback.FeedbackCase}");
+                    return true;
+
+                }
+                
+                Debug.Log($"收到错误反馈数据: {feedback.FeedbackCase}");
+                return false;
+            }
+            else
+            {
+                Debug.LogWarning("未收到返回数据帧");
+                return false;
+                
+            }
+            
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Receive Error: " +e.Message);
+            return false;
+        }
+    }
+    
+    public bool SetPosition(float pos, float maxVel, float maxAcc)
+    {
+        float pos_rad = pos * Mathf.Deg2Rad;
+        float maxVel_rad = maxVel * Mathf.Deg2Rad;
+        float maxAcc_rad = maxAcc * Mathf.Deg2Rad;
+        
+        try
+        {
+            var command = new ControlCommand
+            {
+                SetPosition = new SetPositionCommand
+                {
+                    Pos = pos_rad,
+                    MaxVel = maxVel_rad,
+                    MaxAcc = maxAcc_rad
+                }
+            };
+        
+            byte[] data = command.ToByteArray();
+            socket.SendFrame(data);
+            
+            byte[] msg;
+            if (socket.TryReceiveFrameBytes(TimeSpan.FromSeconds(2), out msg))
+            {
+                var feedback = ControlFeedback.Parser.ParseFrom(msg);
+                if (feedback.FeedbackCase == ControlFeedback.FeedbackOneofCase.SetPosition)
+                {
+                    Debug.Log($"位置设置成功: {feedback.FeedbackCase}");
                     return true;
 
                 }
@@ -631,7 +712,7 @@ public class ZmqClient : MonoBehaviour
         // 编码器2分辨率
         encoder2ResText.text = $"{feedback.Encoder2Resolution} cnt/r"; // Encoder2分辨率
         // 弹簧刚度
-        springStiffnessText.text = $"{feedback.SpringStiffness / Mathf.Rad2Deg} N·m/°"; // 扭簧刚度
+        springStiffnessText.text = $"{(feedback.SpringStiffness / Mathf.Rad2Deg).ToString("F2")} N·m/°"; // 扭簧刚度
     }
     
     
@@ -646,6 +727,7 @@ public class ZmqClient : MonoBehaviour
         // 当前位置
         double currentPosDeg = feedback.CurrentPosition * Mathf.Rad2Deg;
         currentPosText.text = currentPosDeg.ToString("F2") + " °"; // 保留两位小数
+        jntCtrl.value = -(float)currentPosDeg;
         // 当前速度
         double currentVelDeg = feedback.CurrentVelocity * Mathf.Rad2Deg;
         currentVelText.text = currentVelDeg.ToString("F2") + " °/s"; // 保留两位小数
@@ -659,7 +741,11 @@ public class ZmqClient : MonoBehaviour
         double externalForce = feedback.ExternalForce;
         externalForceText.text = externalForce.ToString("F2")  + " Nm"; // 保留两位小数
 
-        twistDeformer.value = -(float)feedback.SpringAngle * Mathf.Rad2Deg;;
+        twistDeformer.value = -(float)feedback.SpringAngle * Mathf.Rad2Deg;
+        
+        // 扭簧转角
+        double springAngleDeg = feedback.SpringAngle * Mathf.Rad2Deg;
+        springAngleText.text = springAngleDeg.ToString("F2") + " °"; // 保留两位小数
         
         
     }
