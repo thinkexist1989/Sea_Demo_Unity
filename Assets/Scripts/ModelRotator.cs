@@ -8,6 +8,8 @@ public class ModelRotator : MonoBehaviour
     // private float lastMouseX;
     
     public float rotationSpeed = 0.005f;    // 鼠标滑动控制旋转的灵敏度
+    public float rotationSpeedTouch = 0.5f;    // 触屏控制旋转的灵敏度
+
     public float inertiaDamping = 0.5f;   // 惯性阻尼，值越大停得越快
 
     private float currentVelocity = 0f;
@@ -23,52 +25,58 @@ public class ModelRotator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (Input.touchCount == 1)
-        // {
-        //     Touch touch = Input.GetTouch(0);
-        //
-        //     if (touch.phase == TouchPhase.Moved)
-        //     {
-        //         float deltaX = touch.deltaPosition.x;
-        //         transform.Rotate(Vector3.up, -deltaX * rotationSpeed * Time.deltaTime, Space.Self);
-        //     }
-        // }else if (Input.GetMouseButtonDown(0))
-        // {
-        //     lastMouseX = Input.mousePosition.x;
-        // }else if (Input.GetMouseButton(0))
-        // {
-        //     float deltaX = Input.mousePosition.x - lastMouseX;
-        //     transform.Rotate(Vector3.up, -deltaX * rotationSpeed * Time.deltaTime, Space.Self);
-        //     lastMouseX = Input.mousePosition.x;
-        // }
-        
-        
-        if (Input.GetMouseButtonDown(0))
+        // 触屏支持
+        if (Input.touchCount == 1)
         {
-            isDragging = true;
-            lastMouseX = Input.mousePosition.x;
-            currentVelocity = 0f;
-        }
-        else if (Input.GetMouseButtonUp(0))
-        {
-            isDragging = false;
-        }
+            Touch touch = Input.GetTouch(0);
 
-        if (isDragging)
-        {
-            float mouseX = Input.mousePosition.x;
-            float deltaX = mouseX - lastMouseX;
-            currentVelocity = deltaX * rotationSpeed;
-            transform.Rotate(Vector3.up, -currentVelocity, Space.Self);
-            // lastMouseX = mouseX;
+            if (touch.phase == TouchPhase.Began)
+            {
+                isDragging = true;
+                lastMouseX = touch.position.x;
+                currentVelocity = 0f;
+            }
+            else if (touch.phase == TouchPhase.Moved)
+            {
+                float deltaX = touch.position.x - lastMouseX;
+                currentVelocity = deltaX * rotationSpeedTouch;
+                transform.Rotate(Vector3.up, -currentVelocity, Space.Self);
+                lastMouseX = touch.position.x;
+            }
+            else if (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled)
+            {
+                isDragging = false;
+            }
         }
         else
         {
-            // 惯性旋转 + 衰减
-            if (Mathf.Abs(currentVelocity) > 0.01f)
+            if (Input.GetMouseButtonDown(0))
             {
+                isDragging = true;
+                lastMouseX = Input.mousePosition.x;
+                currentVelocity = 0f;
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                isDragging = false;
+            }
+
+            if (isDragging)
+            {
+                float mouseX = Input.mousePosition.x;
+                float deltaX = mouseX - lastMouseX;
+                currentVelocity = deltaX * rotationSpeed;
                 transform.Rotate(Vector3.up, -currentVelocity, Space.Self);
-                currentVelocity = Mathf.Lerp(currentVelocity, 0f, Time.deltaTime * inertiaDamping);
+                // lastMouseX = mouseX;
+            }
+            else
+            {
+                // 惯性旋转 + 衰减
+                if (Mathf.Abs(currentVelocity) > 0.01f)
+                {
+                    transform.Rotate(Vector3.up, -currentVelocity, Space.Self);
+                    currentVelocity = Mathf.Lerp(currentVelocity, 0f, Time.deltaTime * inertiaDamping);
+                }
             }
         }
         
